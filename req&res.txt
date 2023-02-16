@@ -1,0 +1,220 @@
+//-----------addPost-------------------------------------------
+req:
+curl -X POST "http://localhost:8080/post" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"desc\": \"Dev ops dev with jenkins and jira\", \"exp\": 3, \"profile\": \"Devops\", \"techs\": [ \"Jenkins\",\"Jira\",\"Scrum\",\"Aws Cloud\" ]}"
+res:
+{
+  "profile": "Devops",
+  "desc": "Dev ops dev with jenkins and jira",
+  "exp": 3,
+  "techs": [
+    "Jenkins",
+    "Jira",
+    "Scrum",
+    "Aws Cloud"
+  ]
+}
+
+//------------search-------------------------------------------
+req:
+curl -X GET "http://localhost:8080/posts/java" -H "accept: */*"
+res:
+[
+  {
+    "profile": "developer",
+    "desc": "Software engineer who can work on enterprise projects using spring boot and mongodb and react",
+    "exp": 1,
+    "techs": [
+      "java",
+      "jee",
+      "spring",
+      "springbot",
+      "microservices"
+    ]
+  },
+  {
+    "profile": "BlockChain Developer",
+    "desc": "Etherium dev with dapps knowledge",
+    "exp": 2,
+    "techs": [
+      "java",
+      "Solidify",
+      "Ruby"
+    ]
+  },
+  {
+    "profile": "java developer",
+    "desc": "Seniour Software engineer with java skillset expert in core java and concurrency",
+    "exp": 5,
+    "techs": [
+      "java",
+      "jee",
+      "spring",
+      "springbot",
+      "microservices",
+      "threads"
+    ]
+  },
+  {
+    "profile": "Architect",
+    "desc": "Assoicate consultant architecture of software, Agile, Devops ",
+    "exp": 10,
+    "techs": [
+      "java",
+      "jee",
+      "spring",
+      "springbot",
+      "microservices",
+      "AWZ",
+      "Azure",
+      "devops"
+    ]
+  },
+  {
+    "profile": "Java Expert",
+    "desc": "Associate consultant for Cloud AWS, PCF, Azure, Redhat",
+    "exp": 10,
+    "techs": [
+      "java",
+      "jee",
+      "design patterns",
+      "springboot",
+      "cloud",
+      "microservices"
+    ]
+  }
+]
+
+//------------getAllPosts--------------------------------------
+req:
+curl -X GET "http://localhost:8080/getAllPosts" -H "accept: */*"
+
+res:
+[
+  {
+    "profile": "developer",
+    "desc": "Software engineer who can work on enterprise projects using spring boot and mongodb and react",
+    "exp": 1,
+    "techs": [
+      "java",
+      "jee",
+      "spring",
+      "springbot",
+      "microservices"
+    ]
+  },
+  {
+    "profile": "Senior Manager",
+    "desc": "Manager for onsite projects in US and UK",
+    "exp": 15,
+    "techs": [
+      "Java",
+      "Blockchain",
+      "android",
+      "datascience"
+    ]
+  },
+  {
+    "profile": "Java Expert",
+    "desc": "Associate consultant for Cloud AWS, PCF, Azure, Redhat",
+    "exp": 10,
+    "techs": [
+      "java",
+      "jee",
+      "design patterns",
+      "springboot",
+      "cloud",
+      "microservices"
+    ]
+  },
+  {
+    "profile": "java developer",
+    "desc": "Seniour Software engineer with java skillset expert in core java and concurrency",
+    "exp": 5,
+    "techs": [
+      "java",
+      "jee",
+      "spring",
+      "springbot",
+      "microservices",
+      "threads"
+    ]
+  },
+  {
+    "profile": "Expert Datascientist",
+    "desc": "Senior Data Scientist",
+    "exp": 15,
+    "techs": [
+      "python",
+      "libraries"
+    ]
+  },
+  {
+    "profile": "development",
+    "desc": "Senior Software engineer for a Data department",
+    "exp": 15,
+    "techs": [
+      "microservices",
+      "hadoop",
+      "bigdata"
+    ]
+  },
+  {
+    "profile": "Architect",
+    "desc": "Assoicate consultant architecture of software, Agile, Devops ",
+    "exp": 10,
+    "techs": [
+      "java",
+      "jee",
+      "spring",
+      "springbot",
+      "microservices",
+      "AWZ",
+      "Azure",
+      "devops"
+    ]
+  },
+  {
+    "profile": "Senior Architect",
+    "desc": "Senior Associate consultant for Mumbai Location",
+    "exp": 15,
+    "techs": [
+      "java",
+      "jee",
+      "spring",
+      "springboot",
+      "microservices"
+    ]
+  },
+  {
+    "profile": "development",
+    "desc": "Devops Engineer worked on kubernetes, ansible, docker",
+    "exp": 12,
+    "techs": [
+      "c",
+      "c++",
+      "java",
+      "kubernetes"
+    ]
+  },
+  {
+    "profile": "Junior DataScientist",
+    "desc": "DataScientiest who has end-to-end project experience",
+    "exp": 12,
+    "techs": [
+      "python",
+      "numpy",
+      "pandas",
+      "matplotlib"
+    ]
+  },
+  {
+    "profile": "BlockChain Developer",
+    "desc": "Etherium dev with dapps knowledge",
+    "exp": 2,
+    "techs": [
+      "java",
+      "Solidify",
+      "Ruby"
+    ]
+  }
+]
